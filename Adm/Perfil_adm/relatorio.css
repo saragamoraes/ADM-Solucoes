@@ -1,0 +1,146 @@
+body {
+  background-color: #FFFFFF;
+  font-family: 'Livvic', sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  padding: 30px;
+  background-color: #FFFFFF;
+}
+
+.d-flex {
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.report-main-content {
+    flex: 1;
+    padding: 25px;
+}
+
+.report-header {
+    display: flex;
+    align-items: center;
+}
+
+.report-header h1 {
+    margin: 0;
+    font-size: 32px;
+    color: #365885;
+    font-weight: 700;
+    font-family: 'Livvic', sans-serif;
+}
+
+.custom-select {
+    padding: 8px 12px;
+    margin-left: 20px;
+    border-radius: 6px;
+    border: 1px solid #bbb;
+    background: white;
+}
+
+.balance-section {
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+
+.current-balance {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.current-balance span {
+    color: #008000;
+    font-weight: bold;
+}
+
+.services-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 18px;
+  align-items: start;
+}
+
+.service-card {
+  background: white;
+  border-radius: 12px;
+  border: #e0e0e0 0.1px solid;
+  padding: 18px;
+  box-shadow: 0px 2px 8px rgba(0,0,0,0.06);
+  transition: transform .12s ease;
+}
+
+.service-card:hover {
+    transform: scale(1.01);
+}
+
+.service-card-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 8px;
+}
+
+.service-card-header p {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.service-card-header span {
+    font-size: 14px;
+    color: #666;
+}
+
+.service-card-body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.service-card-body p {
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+}
+
+.details-button {
+    background: #2979ff;
+    color: white;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.details-button:hover {
+    background: #1e63d4;
+}
+
+@media(max-width: 840px) {
+    .report-main-content {
+        padding: 15px;
+    }
+
+    .service-card {
+        padding: 14px;
+    }
+
+    .service-card-header p {
+        font-size: 16px;
+    }
+}
