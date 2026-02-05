@@ -1,0 +1,437 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Livvic', sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    overflow: hidden;
+}
+
+.auth-container {
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    border-radius: 0;
+    box-shadow: none;
+    overflow: hidden;
+    display: flex;
+}
+
+.auth-wrapper {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.logo-container {
+    text-align: center;
+    margin-bottom: 2px;
+}
+
+.logo {
+    max-width: 350px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.auth-sidebar {
+    width: 40%;
+    background: #365885;
+    color: white;
+    padding: 30px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.auth-sidebar h1 {
+    font-size: 2.5rem;
+    margin-bottom: 150px;
+    font-weight: 600;
+    line-height: 1.2;
+    width: 100%;
+}
+
+.auth-sidebar p {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    width: 100%;
+    margin-bottom: 0;
+}
+
+.auth-sidebar a {
+    color: #fff;
+    font-weight: bold;
+    text-decoration: underline;
+    transition: opacity 0.3s;
+}
+
+.auth-sidebar a:hover {
+    opacity: 0.9;
+}
+
+.auth-form-container.login {
+    width: 60%;
+    padding: 30px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow-y: auto;
+    height: 100%;
+}
+
+.auth-form-container.login form {
+    width: 100%;
+    max-width: 500px;
+}
+
+.auth-form-container.login .form-group input {
+    width: 100%;
+    padding: 12px 16px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    background: #fafafa;
+}
+
+.auth-form-container.cadastro {
+    width: 60%;
+    padding: 30px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    overflow-y: auto;
+    height: 100%;
+}
+
+.auth-form-container.cadastro form {
+    min-height: min-content;
+    width: 100%;
+}
+
+.auth-form-container h2 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #333;
+    text-align: center;
+    width: 100%;
+}
+
+.form-group {
+    margin-bottom: 10px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 4px;
+    font-size: 0.9rem;
+    color: #333;
+    font-weight: 500;
+}
+
+.auth-form-container.cadastro .form-group input {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+    background: #fafafa;
+}
+
+.form-group input:focus {
+    border-color: #365885;
+    box-shadow: 0 0 0 3px rgba(54, 88, 133, 0.1);
+    outline: none;
+    background: #fff;
+}
+
+.form-row {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 6px;
+}
+
+.form-group.half { width: 50%; }
+.form-group.small { width: 30%; }
+.form-group.big { width: 70%; }
+
+h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #333;
+    margin: 12px 0 10px 0;
+    padding-bottom: 6px;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.auth-button {
+    width: 100%;
+    padding: 12px;
+    background: #365885;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    transition: all 0.3s ease;
+}
+
+.auth-button:hover {
+    background: #2a4670;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(54, 88, 133, 0.3);
+}
+
+.msg-error {
+    color: #d32f2f;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 0.9rem;
+    padding: 8px;
+    background: #ffebee;
+    border-radius: 6px;
+    border: 1px solid #ffcdd2;
+}
+
+.auth-form-container.cadastro::-webkit-scrollbar {
+    width: 6px;
+}
+
+.auth-form-container.cadastro::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+.auth-form-container.cadastro::-webkit-scrollbar-thumb {
+    background: #c1c1c1;
+    border-radius: 3px;
+}
+
+.auth-form-container.cadastro::-webkit-scrollbar-thumb:hover {
+    background: #a8a8a8;
+}
+
+@media (max-width: 1024px) {
+    .logo {
+        max-width: 300px;
+    }
+
+    .auth-sidebar {
+        padding: 25px 35px;
+        width: 40%;
+    }
+    
+    .auth-sidebar h1 {
+        font-size: 2.2rem;
+        margin-bottom: 6px;
+    }
+    
+    .auth-form-container.login,
+    .auth-form-container.cadastro {
+        padding: 25px 35px;
+        width: 60%;
+    }
+    
+    .auth-form-container.login form {
+        max-width: 450px;
+    }
+    
+    .auth-form-container h2 {
+        font-size: 1.6rem;
+        margin-bottom: 12px;
+    }
+    
+    h3 {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        height: auto;
+        min-height: 100vh;
+        display: block;
+        overflow: auto;
+    }
+    
+    .auth-container {
+        flex-direction: column;
+        height: auto;
+        min-height: 100vh;
+    }
+    
+    .auth-wrapper {
+        flex-direction: column;
+        height: auto;
+        min-height: 100vh;
+    }
+    
+    .logo-container {
+        margin-bottom: 8px;
+    }
+    
+    .logo {
+        max-width: 250px;
+        margin-bottom: 5px;
+    }
+    
+    .auth-sidebar {
+        padding: 20px 20px;
+        width: 100%;
+        min-height: 200px;
+    }
+    
+    .auth-sidebar h1 {
+        font-size: 1.8rem;
+        margin-bottom: 6px;
+    }
+    
+    .auth-form-container.login,
+    .auth-form-container.cadastro {
+        width: 100%;
+        padding: 20px 25px;
+        height: auto;
+        min-height: calc(100vh - 200px);
+    }
+    
+    .auth-form-container.login {
+        justify-content: flex-start;
+    }
+    
+    .auth-form-container.login form {
+        max-width: 100%;
+        margin-top: 20px;
+    }
+    
+    .auth-form-container.login .form-group input {
+        padding: 12px 14px;
+    }
+    
+    .auth-form-container h2 {
+        font-size: 1.4rem;
+        margin-bottom: 12px;
+    }
+    
+    .form-row {
+        flex-direction: column;
+        gap: 0;
+    }
+    
+    .form-group.half,
+    .form-group.small,
+    .form-group.big {
+        width: 100%;
+    }
+    
+    .form-group {
+        margin-bottom: 8px;
+    }
+    
+    h3 {
+        font-size: 1.1rem;
+        margin: 10px 0 8px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        max-width: 200px;
+    }
+    
+    .auth-sidebar {
+        padding: 15px 15px;
+        min-height: 180px;
+    }
+    
+    .auth-sidebar h1 {
+        font-size: 1.6rem;
+        margin-bottom: 5px;
+    }
+    
+    .auth-sidebar p {
+        font-size: 0.95rem;
+    }
+    
+    .auth-form-container.login,
+    .auth-form-container.cadastro {
+        padding: 15px 20px;
+        min-height: calc(100vh - 180px);
+    }
+    
+    .auth-form-container h2 {
+        font-size: 1.3rem;
+        margin-bottom: 10px;
+    }
+    
+    h3 {
+        font-size: 1rem;
+        margin: 8px 0 6px 0;
+    }
+    
+    .auth-form-container.cadastro .form-group input {
+        padding: 8px 10px;
+        font-size: 0.9rem;
+    }
+    
+    .auth-form-container.login .form-group input {
+        padding: 10px 12px;
+        font-size: 0.95rem;
+    }
+    
+    .auth-button {
+        padding: 10px;
+        font-size: 0.95rem;
+        margin-top: 12px;
+    }
+}
+
+@media (max-width: 360px) {
+    .auth-sidebar {
+        padding: 12px 12px;
+        min-height: 160px;
+    }
+    
+    .logo {
+        max-width: 180px;
+    }
+
+    .auth-sidebar h1 {
+        font-size: 1.4rem;
+        margin-bottom: 4px;
+    }
+    
+    .auth-form-container.login,
+    .auth-form-container.cadastro {
+        padding: 12px 15px;
+        min-height: calc(100vh - 160px);
+    }
+    
+    .auth-form-container h2 {
+        font-size: 1.2rem;
+        margin-bottom: 8px;
+    }
+    
+    .form-group {
+        margin-bottom: 6px;
+    }
+}

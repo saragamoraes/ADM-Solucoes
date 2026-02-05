@@ -1,0 +1,144 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%; 
+    overflow-x: hidden; 
+    font-family: 'Livvic', sans-serif;
+}
+
+.d-flex > * {
+    margin-left: 0 !important;
+    padding-left: 0 !important;
+}
+
+.d-flex ul { 
+    padding-left: 0 !important; 
+    margin: 0 !important; 
+}
+
+.d-flex a {
+    box-sizing: border-box !important;
+    display: block !important;
+    width: 100% !important; 
+}
+
+.main-content {
+    flex-grow: 1; 
+    display: flex;
+    flex-direction: column; 
+    overflow-y: auto; 
+}
+
+.logout-container {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.btn-sair {
+    background: #ff5f5f;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: 'Livvic', sans-serif;
+    font-size: 14px;
+    transition: background 0.3s ease;
+}
+
+.btn-sair:hover {
+    background: #ff5f5f;
+}
+
+.main-header {
+    flex-shrink: 0; 
+    background-color: white;
+    padding: 25px 30px; 
+    border-bottom: 1px solid #e0e0e0; 
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05); 
+    display: flex; 
+    justify-content: center;
+    align-items: center; 
+}
+
+.main-header h1 {
+    margin: 0;
+    font-size: 32px;
+    color: #365885;
+    font-weight: 500;
+    font-family: 'Livvic', sans-serif;
+}
+
+.page-content {
+    flex-grow: 1; 
+    background-color: white; 
+}
+
+.perfil-card {
+    background-color: white; 
+    padding: 0; 
+    box-shadow: none; 
+    width: 100%;
+    margin: 0; 
+}
+
+.saudacao-perfil {
+    display: flex;
+    align-items: center;
+    padding: 20px 30px; 
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.perfil-avatar {
+    width: 60px;
+    height: 60px;
+    margin-right: 15px;
+    flex-shrink: 0; 
+    object-fit: contain;
+}
+
+.perfil-nome {
+    font-size: 22px;
+    font-weight: 500;
+    color: #365885;
+    align-self: center; 
+}
+
+.opcoes-perfil {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.opcao-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px; 
+    border-bottom: 1px solid #f0f0f0; 
+    transition: background-color 0.2s;
+}
+
+.opcao-item:hover {
+    background-color: #fafafa;
+}
+
+.opcao-item a {
+    text-decoration: none;
+    color: #365885; 
+    font-size: 22px; 
+    font-weight: 500; 
+    flex-grow: 1; 
+}
+
+.seta-icone-img {
+    width: 24px;          
+    height: auto;
+    margin-left: 10px;
+    align-self: center; 
+}
+
+.opcoes-perfil li:last-child {
+    border-bottom: none;
+}
