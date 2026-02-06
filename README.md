@@ -25,7 +25,7 @@ O projeto foi desenvolvido com foco em organização, usabilidade e experiência
 # 🖼️ Telas 
 
 <div align="center">
-  <img src="servicos.jpeg" width="255"/>
-  <img src="agenda.jpeg" width="260"/>
-  <img src="avaliacoessobre.jpeg" width="250"/>
+  <img src="servicos.jpeg" width="244"/>
+  <img src="agenda.jpeg" width="248"/>
+  <img src="avaliacoes.jpeg" width="270"/>
 </div>
