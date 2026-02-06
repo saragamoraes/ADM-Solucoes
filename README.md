@@ -8,16 +8,24 @@ Por meio do sistema, os clientes conseguem visualizar os serviços disponíveis,
 
 O projeto foi desenvolvido com foco em organização, usabilidade e experiência do usuário, buscando reduzir processos manuais e melhorar a comunicação entre cliente e prestador de serviços.
 
-⚙️ Tecnologias utilizadas:
-HTML5,
-CSS3,
-JavaScript,
-PHP,
-MySQL.
+# ⚙️ Tecnologias utilizadas:
+- HTML5
+- CSS3
+- JavaScript
+- PHP
+- MySQL
 
-📌 Funcionalidades principais:
-Cadastro e gerenciamento de serviços e preços,
-Agendamento e cancelamento de horários,
-Visualização de serviços disponíveis,
-Feedback dos clientes,
-Controle e organização da agenda.
+# 📌 Funcionalidades principais:
+- Cadastro e gerenciamento de serviços e preços
+- Agendamento e cancelamento de horários
+- Visualização de serviços disponíveis
+- Feedback dos clientes
+- Controle e organização da agenda
+
+# 🖼️ Telas 
+
+<div align="center">
+  <img src="servicos.png" width="250"/>
+  <img src="agenda.png" width="250"/>
+  <img src="avaliacoessobre.png" width="250"/>
+</div>
